@@ -1,0 +1,28 @@
+<svg style="width: 100vw; height: 100vh;"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <filter id="blurMe">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+  </filter>
+  <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="00" cy="90" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+          <circle cx="170" cy="100" r="50" fill="green"
+          filter="url(#blurMe)" />
+</svg>

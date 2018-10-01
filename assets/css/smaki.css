@@ -1,0 +1,85 @@
+#smaki 
+{
+    background-image: url('Images/smaki.jpg');
+    left: 600vw;
+    width: 90vw;
+    display: table;
+    color: white;
+    padding-left: 10vw;
+}
+#smaki .arrowL
+{
+    position: absolute;
+    z-index: 999;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#smaki .arrowR
+{
+    position: absolute;
+    right: 1vw;
+    width: 2vw;
+    height: auto;
+    top: 50%; 
+    z-index: 999;
+    transform: translate(-50%, -50%); 
+}
+
+#smaki .left 
+{
+    width: 40vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#smaki .right
+{
+    display: table-cell;
+    width: 40vw;
+}
+
+#smaki p
+{
+    font-size: 2vh;
+    margin: 0;
+}
+#smaki .left .container
+{
+    display: inline-block;
+    width: 40vw;
+}
+
+#smaki .left .container .title
+{ 
+    font-size: 8vh;
+}
+
+#smaki .left .container .horizLine
+{
+    border-bottom: 1px solid white;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: -5vw;
+}
+
+#smaki .left .container .bordered 
+{
+    border: 1px solid white;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding: 0.5vh 1vw;
+    margin-left: -1vw;
+    display: inline-block;
+}
+
+@media (max-width:1000px)
+{
+    #smaki 
+    {
+        display: none;
+    }
+}

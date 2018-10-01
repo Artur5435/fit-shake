@@ -1,0 +1,158 @@
+@font-face
+{
+	font-family: "SF-Comp-SB";
+	src: url("Fonts/SF-Compact-Display-Semibold.ttf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-SB";
+	src: url("Fonts/SF-Pro-Display-Semibold.otf");
+}
+
+.menu 
+{
+    position: fixed;
+    text-align: right;
+    top: 0;
+    padding-top:1vh;
+    padding-bottom: 1vh;
+    width: 100vw;
+    z-index: 999;
+    border-bottom: 1px solid white;
+}
+
+.menu p 
+{
+    -webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out ;
+	transition: color 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.8vh;
+    text-align: center;
+    width: 7%;
+    cursor:pointer;
+    color: white;
+}
+
+.menu .clickable:hover 
+{
+    color: #eaff00;
+}
+
+.menu .clickable.active
+{
+    color: #eaff00;
+}
+
+.menu img
+{
+    display: inline-block;
+    float: left;
+    height: 1.8vh;
+    padding-left: 2vw;
+}
+
+.menu .vertLine 
+{
+    display: inline-block;
+    border: 1px solid white;
+    margin-top: 0.5vh;
+    height: 1vh;
+}
+.menuResponsive 
+{
+    position: fixed;
+    text-align: right;
+    top: 0;
+    padding-top:1vh;
+    padding-bottom: 1vh;
+    width: 100vw;
+    z-index: 999;
+    border-bottom: 1px solid white;
+}
+
+.menuResponsive p 
+{
+    -webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out ;
+	transition: color 0.3s ease-in-out;
+    display: block;
+    margin: 0;
+    font-size: 2vh;
+    text-align: center;
+    width: 100%;
+    cursor:pointer;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+.menuResponsive .clickable:hover 
+{
+    color: #eaff00;
+}
+
+.menuResponsive .clickable.active
+{
+    color: #eaff00;
+}
+
+.menuResponsive img
+{
+    display: inline-block;
+    float: left;
+    height: 1.8vh;
+    padding-left: 2vw;
+}
+
+.menuResponsive .vertLine 
+{
+    display: inline-block;
+    border: 1px solid white;
+    margin-top: 0.5vh;
+    height: 1vh;
+}
+
+.menuResponsive
+{
+    display: none;
+}
+
+.menuList
+{
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out ;
+	transition: all 0.3s ease-in-out;
+    transform: scale(0,0);
+    display: inline-block;
+    position: absolute;
+    right: calc(30/48 * 1.8vh + 3vh);
+    background: black;
+    border: 1px solid white;
+    padding: 1vh 5vw;
+}
+
+.menuList.active 
+{
+    transform: scale(1,1);
+}
+
+.burger 
+{
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width:1000px)
+{
+    .menuResponsive 
+    {
+        display: block;
+        background: black;
+    }
+    .menu 
+    {
+        display: none;
+    }
+}

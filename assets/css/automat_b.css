@@ -1,0 +1,104 @@
+#automat_b 
+{
+    background-image: url('Images/automat_b.jpg');
+    left: 500vw;
+    display: table;
+    color: white;
+}
+
+#automat_b .left 
+{
+    width: 51vw;
+    display: table-cell;
+}
+
+#automat_b p
+{
+    font-size: 2vh;
+    margin: 0;
+}
+
+#automat_b .right 
+{
+    display: table-cell;
+    padding-top: 10vh;
+}
+
+
+#automat_b .detailsAutomat
+{
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out ;
+	transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+    border: 1px solid white;
+    padding:  0.5vh 1vw;
+}
+
+#automat_b .detailsAutomat:hover
+{
+    color: #eaff00;
+    border-color: #eaff00;
+    cursor: pointer;
+}
+
+#automat_b .detailList 
+{
+    display: table;
+    border-spacing: 1vw 1vh;
+}
+
+#automat_b .right .detailsContainer .title
+{
+    font-size: 8vh;
+}
+
+#automat_b .detailList .item 
+{
+    display: table-row;
+    
+}
+
+#automat_b .detailList .item p
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#automat_b .detailList .item img
+{
+    display: table-cell;
+}
+
+@media (max-width:1000px)
+{
+    #automat_b 
+    {
+        display: block;
+        top: -100vh;
+        left: 0;
+        height: 100vh;
+    }
+
+    #automat_b .left {
+
+        width: 51vw;
+        display: none;
+        
+    }
+    #automat_b .right {
+
+        display: block;
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    
+    }
+    #automat_b .detailList .item img {
+
+        display: none;
+    
+    }
+}

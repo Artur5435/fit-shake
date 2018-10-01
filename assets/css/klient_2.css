@@ -1,0 +1,184 @@
+#klient_2 
+{
+    background-image: url('Images/klient_2.jpg');
+    display: table-row;
+    color: white;
+    left: 100vw;
+    top: 0;
+}
+
+#klient_2 .arrowL
+{
+    position: absolute;
+    z-index: 999;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#klient_2 .arrowR
+{
+    position: absolute;
+    right: 1vw;
+    width: 2vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+#klient_2 p
+{
+    margin: 0;
+    font-size: 2vh;
+}
+
+#klient_2  .left 
+{
+    display: table-cell;
+    width: 40vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 100vh;
+    position: relative;
+    vertical-align: middle;
+}
+
+#klient_2  .left .title
+{
+    font-size: 8vh;
+    width: 60vw;
+    
+}
+#klient_2  .left .title p
+{
+    font-size: 8vh;
+}
+
+#klient_2  .left .title p
+{
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+#klient_2 .left  .horizLine
+{
+    display: inline-block;
+    width: 40vw;
+    margin-top: 1vh;
+    margin-left: -1vw;
+    margin-bottom: 1vh;
+    border-bottom: 1px solid white;
+}
+
+#klient_2 .left .show::before
+{
+    content: "+ ";
+}
+
+#klient_2 .left .show
+{
+    cursor: pointer;
+    line-height: 1.5;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out ;
+	transition: all 0.3s ease-in-out;
+}
+
+#klient_2 .left .showContainer
+{
+}
+
+#klient_2 .left .showable 
+{
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out ;
+	transition: all 0.3s ease-in-out;
+    font-size: 1.8vh;
+    padding-left: 1vw;
+    width: 30vw;
+    transform: scale(1,0);
+    height: 0;
+    margin-left: -1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    border-top: 1px solid white;
+}
+
+#klient_2 .left .showContainer.showed .showable
+{
+    transform: scale(1,1);
+    height: 10vh;
+}
+
+#klient_2 .left .showContainer.showed .show
+{
+    color:  #eaff00;
+}
+
+
+#klient_2 .left .showContainer.showed .show::before
+{
+    content: "- ";
+}
+
+@media (max-width:1000px)
+{
+    #klient_2 
+    {
+        display: block;
+        left: 0;
+        top: 0;
+        padding-top: 50px;
+    }
+
+    #klient_2 .left .title {
+
+        font-size: 6vh;
+        width: 100%;
+    
+    }
+
+    #klient_2 .left .title p {
+
+        font-size: 6vh;
+    
+    }
+
+    #klient_2 .left {
+
+        display: inline-block;
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 95vh;
+        position: relative;
+        vertical-align: middle;
+    
+    }
+    #klient_2 .left .showable {
+
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.8vh;
+        padding-left: 1vw;
+        width: 100%;
+        transform: scale(1,0);
+        height: 0;
+        margin-left: -1vw;
+        padding-left: 1vw;
+        padding-top: 1vh;
+        border-top: 1px solid white;
+    
+    }
+
+    #klient_2 .left .showContainer.showed .showable {
+
+        transform: scale(1,1);
+        height: 15vh;
+    
+    }
+}

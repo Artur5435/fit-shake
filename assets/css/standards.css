@@ -1,0 +1,181 @@
+@font-face
+{
+	font-family: "SF-Pro-HI";
+	src: url("Fonts/SF-Pro-Display-HeavyItalic.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-Reg";
+	src: url("Fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-Lig";
+	src: url("Fonts/SF-Pro-Display-Light.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-T";
+	src: url("Fonts/SF-Pro-Display-Thin.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-H";
+	src: url("Fonts/SF-Pro-Display-Heavy.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-SB";
+	src: url("Fonts/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-RI";
+	src: url("Fonts/SF-Pro-Display-RegularItalic.otf");
+}
+
+@font-face
+{
+	font-family: "SF-Pro-Reg";
+	src: url("Fonts/SF-Pro-Display-Regular.otf");
+}
+
+@keyframes fadeIn {
+	0% 	 { background-color: rgba(0,0,0,1);}
+	100% { background-color: rgba(0,0,0,0);}
+}
+@keyframes fadeInText {
+	0% 	 { opacity:0;}
+	25% { opacity:1;}
+	75% { opacity:1;}
+	100% 	 { opacity:0;}
+}
+
+@keyframes Scalling {
+	0% 	 { transform: scale(1,1);}
+	50%  { transform: scale(1,1.2);}
+	100% { transform: scale(1,1);}
+}
+
+.Fade
+{
+	-webkit-transition: opacity 0.7s ease-in-out;
+	-moz-transition: opacity 0.7s ease-in-out ;
+	transition: opacity 0.7s ease-in-out;
+	opacity: 0;
+}
+
+i 
+{
+	font-size: 2vh;
+}
+		
+.FadeIn-active
+{
+	opacity: 1;
+}
+
+body 
+{
+	overflow: hidden;
+	background-color: black;
+}
+
+.page
+{
+	z-index: 200;
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	text-align: left;
+}
+
+.fullScreen
+{
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+}
+
+.noMarginP
+{
+	margin: 0;
+}
+
+.arrowR , .arrowL
+{
+	cursor: pointer;
+	width: 2vw;
+}
+
+.fitYellow
+{
+	color:  #eaff00;
+	font-family: "SF-Pro-SB";
+}
+
+.SF-SB
+{
+	font-family: "SF-Pro-SB";
+}
+
+.SF-HI
+{
+	font-family: "SF-Pro-HI";
+}
+
+.SF-RI
+{
+    font-family: "SF-Pro-RI";
+}
+
+.SF-R 
+{
+    font-family: "SF-Pro-Reg";
+}
+
+.SF-H 
+{
+    font-family: "SF-Pro-H";
+}
+
+.SF-T 
+{
+    font-family: "SF-Pro-T";
+}
+
+.SF-L 
+{
+	font-family: "SF-Pro-Lig";
+}
+
+@media (max-width:1000px)
+{
+    p 
+    {
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	}
+	body 
+	{
+		overflow: auto;
+	}
+	.page 
+	{
+		text-align: center;
+		position: relative;
+	}
+
+	.fullScreen
+	{
+		background-attachment: scroll;
+	}
+}

@@ -1,0 +1,271 @@
+#automat 
+{
+    background-image: url('Images/automat.jpg');
+    left: 500vw;
+    display: table;
+    color: white;
+}
+
+#automat .arrowL
+{
+    position: absolute;
+    z-index: 999;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#automat .arrowR
+{
+    position: absolute;
+    right: 1vw;
+    width: 2vw;
+    height: auto;
+    top: 50%; 
+    z-index: 999;
+    transform: translate(-50%, -50%); 
+}
+
+
+#automat .left 
+{
+    width: 50vw;
+    display: table-cell;
+}
+
+#automat p
+{
+    font-size: 2vh;
+    margin: 0;
+}
+
+#automat .right 
+{
+    display: table-cell;
+}
+
+#automat .right .container .title
+{
+    margin-top: 8vh;
+    font-size: 8vh;
+    margin-bottom: 5vh;
+}
+
+#automat .right .container .title p
+{
+    margin: 0;
+    font-size: 8vh;
+}
+
+#automat .right .container .mainInfo 
+{
+
+}
+
+#automat .right .container .details 
+{
+    display: inline-block;
+    border: 1px solid white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-left: -1vw;
+    margin-top: 1vh;
+
+}
+
+#automat .right .container .details p
+{
+    font-size: 1.8vh;
+}
+
+#automat .detailsAutomat
+{
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out ;
+	transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+    border: 1px solid white;
+    padding:  0.5vh 1vw;
+}
+
+#automat .detailsAutomat:hover
+{
+    color: #eaff00;
+    border-color: #eaff00;
+    cursor: pointer;
+}
+
+.karuzela 
+{
+    margin-top: 12vh;
+    margin-left: -5vw;
+    margin-right: 5vw;
+}
+
+.karuzela .pair.active 
+{
+    /*! display: table-row !important; */
+    opacity: 1;
+}
+
+.karuzela .pair.inactive 
+{
+    /*! display: none !important; */
+    
+    
+}
+
+.karuzela .firstPair
+{
+    -webkit-transition: opacity 1.4s ease-in-out;
+	-moz-transition: opacity 1.4s ease-in-out ;
+    transition: opacity 1.4s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    width: 50vw;
+}
+
+.karuzela .secondPair 
+{
+    -webkit-transition: opacity 1.4s ease-in-out;
+	-moz-transition: opacity 1.4s ease-in-out ;
+    transition: opacity 1.4s ease-in-out;
+    position: relative;
+    opacity: 0;
+    z-index: 20;
+    bottom: 100%;
+}
+
+
+.karuzela .pair
+{
+    display: table-row;
+}
+
+.karuzela .pair .item 
+{
+    display: table-cell;
+}
+
+.karuzela .pair .item .content
+{
+    display: table-row;
+}
+
+.karuzela .pair .item .content img
+{
+    display: table-cell;
+}
+
+.karuzela .pair .item .content p
+{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5vh;
+}
+
+.karuzela
+{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+@media (max-width:1000px)
+{
+    #automat 
+    {
+        display: block;
+        left: 0;
+        top: 0;
+        height: auto;
+        background-image: url('Images/automat_mob.jpg');
+        height: 100vh;
+    }
+
+    #automat .right .container .title p {
+
+        font-size: 6vh;
+    
+    }
+    #automat .left {
+        display: none;
+    
+    }
+
+    #automat .right {
+
+        display: block;
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    
+    }
+
+    #automat .right .container .details p {
+
+        font-size: 2vh;
+    
+    }
+    .karuzela {
+
+        margin-top: 5vh;
+        margin-left: 0;
+        margin-right: 0;
+    
+    }
+    .karuzela .pair .item .content img {
+
+        display: none;
+    
+    }
+    .karuzela .firstPair {
+        width: 90vw;
+    }
+
+    #automat .detailsAutomat {
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        display: inline-block;
+        border: 1px solid white;
+        padding: 0.5vh 1vw;
+        left: 0;
+
+        bottom: 0;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    #automat .arrowL {
+
+        position: absolute;
+        z-index: 999;
+        width: auto;
+        height: 10vh;
+        left: 50vw;
+        top: -10vh;
+        transform: translate(-50%, 0) rotate(90deg);
+    
+    }
+    #automat .arrowR {
+
+        position: absolute;
+        z-index: 999;
+        top: auto;
+        width: auto;
+        height: 10vh;
+        left: 50vw;
+        bottom: 1vh;
+        transform: translate(-50%, 0) rotate(90deg);
+    
+    }
+}

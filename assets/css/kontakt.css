@@ -1,0 +1,238 @@
+#kontakt 
+{
+    background-image: url('Images/kontakt.jpg');
+    color: white;
+    width: 85vw;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    left: 600vw;
+    top: 0;
+}
+
+#kontakt p
+{
+    font-size: 2vh;
+}
+
+#kontakt .arrowL
+{
+    position: absolute;
+    z-index: 999;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#kontakt .container 
+{
+}
+
+#kontakt .container .upper
+{
+    display: inline-block;
+    border-bottom: 1px solid white;
+    width: 80vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+#kontakt .container .upper p
+{
+    width: 80vw;
+}
+
+#kontakt .container .upper .title
+{
+	font-size: 8vh;
+	margin-bottom: 3vh;
+}
+
+#kontakt .container .contactFooter
+{
+    display: table-row;
+    padding-left: 5vw;
+}
+
+#kontakt .container .contactFooter #mailForm
+{
+    display: table-cell;
+    width: 40vw;
+    padding-left: 5vw;
+}
+
+#kontakt .container .contactFooter #phone
+{
+    display: table-cell;
+    width: 35vw;
+    padding-left: 5vw;
+}
+
+.contactFooter
+{
+	white-space: normal;
+}
+
+.contactFooter #mailForm
+{
+	display: inline-block;
+}
+
+.contactFooter #mailForm input
+{
+	width: 50%;
+	background: none;
+	border: 1px solid white;
+	margin-bottom: 1vh;
+	color: white;
+	font-family: "SF-Pro-Reg";
+	font-size: 2vh;
+}
+
+.contactFooter #mailForm textarea
+{
+	color: white;
+	width: 100%;
+	resize: none;
+	box-shadow: none;
+	background: none;
+	border: 1px solid white;
+	font-family: "SF-Pro-Reg";
+	font-size: 2vh;
+}
+
+.inputField::-moz-placeholder
+{
+	color: white;
+	opacity: 0.7;
+}
+.inputField::-webkit-input-placeholder
+{
+	color: white;
+	opacity:  0.7;
+}
+.contactFooter #mailForm .more
+{
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out ;
+	transition: color 0.3s ease-in-out;
+	float: right;
+	margin-top: -2.5vh;
+	margin-right: 10px;
+	cursor: pointer;
+	z-index: 400;
+	position: relative;
+}
+
+.contactFooter #mailForm .more:hover
+{
+	color: #eaff00;
+}
+
+.contactFooter #phone
+{
+	display: inline-block;
+}
+
+.contactFooter #phone .number 
+{
+	border: 1px solid white;
+	display: inline-block;
+	padding: 8pt;
+	margin-left: -15px;
+	height: 32pt;
+}
+.contactFooter #phone .number img
+{
+	display: inline-block;
+	height: 100%;
+	margin-right: 30px;
+}
+.contactFooter #phone .number a
+{
+	display: inline-block;
+	margin: 0;
+	font-size: 4vh;
+	position: relative;
+	top: 0;
+	vertical-align: top;
+	line-height: 4vh;
+	color: white;
+	text-decoration: none;
+}
+
+.contactFooter #phone .afterNumber
+{
+	font-size: 1.5vh;
+	margin-left: -15px;
+	opacity: 0.7;
+}
+
+@media (max-width:1000px)
+{
+    #kontakt 
+    {
+		display: block;
+		left: 0;
+		top: 0;
+		height: auto;
+		width: 90vw;
+
+padding-left: 5vw;
+
+padding-right: 5vw;
+padding-bottom: 5vh;
+	}
+	
+	#kontakt .container .upper .title {
+
+		font-size: 6vh;
+	
+	}
+	#kontakt .container .upper p {
+
+		width: 100%;
+	
+	}
+
+	#kontakt .container .upper {
+
+		display: inline-block;
+		border-bottom: 1px solid white;
+		width: 100%;
+		padding: 0;
+	
+	}
+
+	#kontakt .container .contactFooter #mailForm {
+
+		display: block;
+		width: 100%;
+		padding-left: 0;
+	
+	}
+
+	#kontakt .container .contactFooter #phone {
+
+		display: block;
+		width: 100%;
+		padding-left: 0;
+	
+	}
+	
+	#kontakt .arrowL {
+		position: absolute;
+
+z-index: 999;
+
+width: auto;
+
+height: 10vh;
+
+left: 50vw;
+
+top: 0;
+
+transform: translate(-50%, 0) rotate(90deg);
+	}
+}

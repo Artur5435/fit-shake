@@ -1,0 +1,221 @@
+@font-face
+{
+	font-family: "SF-Comp-SB";
+	src: url("Fonts/SF-Compact-Display-Semibold.ttf");
+}
+
+#start .arrowL
+{
+    position: absolute;
+    z-index: 999;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#start .arrowR
+{
+    position: absolute;
+    right: 1vw;
+    width: 2vw;
+    height: auto;
+    top: 50%; 
+    z-index: 999;
+    transform: translate(-50%, -50%); 
+}
+
+#start.firstLayer
+{
+	background-color: rgba(0,0,0,1);
+	background-image: url("Images/background1.jpg");
+	background-blend-mode: color;
+	-webkit-animation: fadeIn 1.4s ease-in-out 0.7s forwards;
+	-moz-animation: fadeIn 1.4s ease-in-out 0.7s forwards;
+	animation: fadeIn 1.4s ease-in-out 0.7s forwards;
+}
+
+#start .secondLayer
+{
+	background-image: url("Images//background2.png");
+}
+
+#start .thirdLayer
+{
+	background-image: url("Images/background3.png");
+}
+
+#start .secondLayer .thirdLayer
+{
+    display: table-row;
+    
+}
+
+#start .left
+{
+    width: 50vw;
+    display: table-cell;
+}
+
+#start .right 
+{
+    display: table-cell;
+    width: 40vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+    position: relative;
+    vertical-align: middle;
+}
+
+#start 
+{
+    color: white;
+    left: 300vw;
+    top: 0;
+    text-align: center;
+}
+
+#start p
+{
+    margin: 0;
+    font-size: 2vh;
+}
+
+#start .right .container 
+{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-left: 1px solid white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#start .right .container .title
+{
+    font-size: 8vh;
+}
+
+#start .right .container .title p
+{
+    margin: 0;
+    font-size: 8vh;
+}
+
+#start .right .container .text .bigger
+{
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+#start .right .container .text .horizLine
+{
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#start .right .container .bContainer
+{
+    display: table;
+    text-align: center;
+    border-spacing: 0 0.5vh;
+    margin: 8vh auto auto auto;
+}
+
+#start .right .container .bContainer .bRow
+{
+    display: table-row;
+}
+
+#start .right .container .bContainer .bRow .button
+{
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out ;
+	transition: all 0.2s ease-in-out;
+    display: table-cell;
+    border: 1px solid white;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#start .right .container .bContainer .bRow .button p
+{
+    font-size: 3vh;
+}
+
+#start .right .container .bContainer .bRow .button:hover
+{
+	color: #eaff00;
+    border-color: #eaff00;
+    cursor: pointer;
+}
+
+@media (max-width:1000px)
+{
+    #start 
+    {
+        display: block;
+        left: 0;
+        top: auto;
+    }
+
+    #start .left {
+
+        display: none;
+    
+    }
+
+    #start .secondLayer .thirdLayer {
+
+        display: block;
+    
+    }
+
+    #start .right {
+
+        display: block;
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        position: relative;
+        vertical-align: middle;
+    
+    }
+
+    #start .right .container {
+
+        padding-left: 0;
+        padding-right: 0;
+        border-left: none;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    
+    }
+
+    #start .right .container .bContainer {
+
+        display: table;
+        text-align: center;
+        border-spacing: 0 0.5vh;
+        margin: 3vh auto auto auto;
+    
+    }
+
+    #start .arrowR {
+
+        position: absolute;
+        right: auto;
+        left: 50vw;
+        width: auto;
+        height: 10vh;
+        top: auto;
+        bottom: 1vh;
+        z-index: 999;
+        transform: translate(-50%, 0) rotate(90deg);
+    
+    }
+}

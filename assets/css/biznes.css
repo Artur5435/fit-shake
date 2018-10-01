@@ -1,0 +1,274 @@
+#biznes 
+{
+    background-image: url('Images/biznes.jpg');
+    color: white;
+    left: 200vw;
+    top: 0;
+}
+
+#biznes .arrowL
+{
+    position: absolute;
+    width: 2vw;
+    left: 1vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#biznes .arrowR
+{
+    position: absolute;
+    right: 1vw;
+    width: 2vw;
+    height: auto;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+#biznes p
+{
+    margin: 0;
+    font-size: 2vh;
+}
+
+#biznes .topElem 
+{
+    
+    width: 80vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 7vw;
+    margin-right: 5vw;
+    height: 45vh;
+    border-bottom: 1px solid white;
+    display: table;
+}
+
+#biznes .topElem .container 
+{
+    display: table-cell;
+    position: relative;
+    vertical-align: bottom;
+    padding-bottom: 1vh;
+}
+
+#biznes .topElem .title
+{
+    font-size: 8vh;
+    position: relative;
+    vertical-align: middle;
+}
+
+#biznes .topElem .title p
+{
+    margin: 0;
+    font-size: 8vh;
+}
+
+#biznes .topElem .text 
+{
+}
+
+#biznes .botElem
+{
+    width: 100vw;
+    display: table;
+}
+
+#biznes .botElem .row
+{
+    display: table-row;
+}
+
+#biznes .botElem .row .cell
+{
+    display: table-cell;
+    width: 50vw;
+}
+
+#biznes .botElem .row .cellR
+{
+    width: 40vw;
+    padding-right: 2vw;
+}
+
+#biznes .botElem .row .cell .content
+{
+    display: table;
+    padding-left: 4vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+#biznes .botElem .row .cell .content img
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    height: 8vh;
+    padding-right: 1vw;
+}
+
+#biznes .botElem .row .cell .content .texts
+{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+#biznes .botElem .row .cell .content .texts .smallerDesc
+{
+    font-size: 1.8vh;
+    
+}
+
+#biznes .botElem .row .cell .content .texts .smallerDesc .SF-H
+{
+    font-size: 2vh;
+}
+
+#biznes .botElem .row .cell .content.specificOne 
+{
+    padding-top: 1vh;
+    border: 1px solid white;
+    border-right: none; 
+    padding-left: 0;
+    margin-left: 3vw;
+}
+
+#biznes .botElem .row .cell .content.specificOne .container .horizLine
+{
+    border-bottom: 1px solid white;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    width: 25vw;
+}
+
+#biznes .botElem .row .cell .content.specificOne .container .fitYellow
+{
+    margin-bottom: 1vh;
+}
+
+#biznes .botElem .row .cell .content.specificOne .container 
+{
+   padding-right: 10vw;
+   padding-left: 1vw;
+}
+#biznes .botElem .row .cell .content.specificOne .container p.add
+{
+    font-size: 2vh;
+}
+
+#biznes .botElem .row .cell .content.specificOne .container p
+{
+    font-size: 1.5vh;
+}
+
+@media (max-width:1000px)
+{
+    #biznes 
+    {
+        display: block;
+        left: 0;
+        top: 0;
+        height: auto;
+    }
+    #biznes .topElem {
+
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 1vh;
+        margin: 0;
+        height: auto;
+        border-bottom: 1px solid white;
+        display: block;
+    
+    }
+
+    #biznes .topElem .title p {
+
+        margin: 0;
+        font-size: 6vh;
+    
+    }
+
+    #biznes .botElem {
+
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: block;
+    
+    }
+
+    #biznes .botElem .row {
+
+        display: block;
+    
+    }
+
+    #biznes .botElem .row .cell {
+
+        display: block;
+        width: 100%;
+    
+    }
+
+    #biznes .botElem .row .cell .content.specificOne {
+
+        padding-top: 1vh;
+        border: 1px solid white;
+        border-bottom: none;
+        padding-left: 0;
+    }
+
+    #biznes .botElem .row .cell .content.specificOne .container .horizLine {
+
+        border-bottom: 1px solid white;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        width: 100%;
+    
+    }
+    #biznes .botElem .row .cell .content.specificOne .container {
+
+        padding-right: 1vw;
+        padding-left: 1vw;
+    
+    }
+
+    #biznes .botElem .row .cell .content img {
+
+        display: none;
+    
+    }
+
+    #biznes .botElem .row .cell .content {
+
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+    
+    }
+
+    #biznes .botElem .row .cell .content.specificOne .container p {
+        font-size: 1.8vh;
+    }
+
+    #biznes .botElem .row .cell .content .texts {
+
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 100%;
+    
+    }
+}

@@ -1,0 +1,277 @@
+#klient 
+{
+    background-image: url('Images/klient.jpg');
+    display: table-row;
+    color: white;
+    left: 0;
+    top: 0;
+}
+
+#klient .left 
+{
+    display: table-cell;
+    width: 40vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 100vh;
+    position: relative;
+    vertical-align: middle;
+}
+
+#klient .left .title
+{
+    font-size: 8vh;
+    line-height: 0.8;
+    margin-bottom: 1vh;
+}
+
+#klient .left .title .SF-RI
+{
+    font-size: 7vh;
+    line-height: 1.2;
+}
+
+#klient .left .title p
+{
+    margin: 0;
+}
+
+
+
+#klient .left .text 
+{
+    font-size: 2vh;
+}
+
+#klient .left .text .firstDzyndzel 
+{
+    width: 36px;
+    margin-left: -2vw;
+    max-width: 2vw;
+}
+
+#klient .left .text .secondDzyndzel 
+{
+    width: 36px;
+    margin-bottom: 2vh;
+    max-width: 2vw;
+}
+
+#klient .left .text .podpisy 
+{
+    margin-top: 2vh;
+    border-bottom: 1px solid white;
+    padding: 0.5vh 0.5vw;
+}
+
+#klient .left .text .podpisy .first
+{
+    display: table-cell;
+    width: 19.5vw;
+    text-align: left;
+}
+
+#klient .left .text .podpisy .second
+{
+    display: table-cell;
+    width: 19.5vw;
+    text-align: right;
+}
+
+#klient .left .text .bottomText
+{
+    margin-top: 4vh;
+}
+
+#klient .left .text .bottomText p
+{
+    display: inline;
+    margin: 0;
+}
+
+#klient .left .text .bottomText .horizLine
+{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-bottom: 1px solid white;
+}
+
+#klient .left .text .bottomText .bot
+{
+    font-size: 2.8vh;
+    width: 120%;
+}
+
+
+#klient .right 
+{
+    display: table-cell;
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 13vw;
+}
+
+#klient .right .content
+{
+    height: 40vh;
+    border-left: 1px solid white;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 5vw;; 
+}
+
+#klient .right .content .text
+{
+    border: 1px solid white;
+    border-right: none;
+    width: 24vw;
+    
+    padding-left: 1vw;
+    text-align: center;
+}
+#klient .right .content .text .textarea
+{
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+#klient .right .content .text img
+{
+    display: inline-block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    max-width: 20%;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#klient .right .content .text .textarea p
+{
+    text-align: left;
+}
+
+#klient .right .content .text .textarea .fitYellow
+{
+    font-size: 2vh;
+}
+
+#klient .right .content .text .textarea .SF-L 
+{
+    font-size: 2.5vh;
+}
+
+@media (max-width:1000px)
+{
+    #klient 
+    {
+        text-align: center;
+        display: block;
+        padding-top: 50px;
+    }
+    #klient .left 
+    {
+        display: block;
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 70vh;
+        position: relative;
+        vertical-align: middle;
+        
+    }
+
+    #klient .left .text .bottomText .bot {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    #klient .right 
+    {
+        display: block;
+        width: 70vw;
+        height: 25vh;
+        position: absolute;
+        bottom: 0;
+        vertical-align: middle;
+        padding-left: 15vw;
+    }
+
+    #klient .left .text .podpisy .first {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+
+    #klient .left .text .podpisy .second {
+        display: inline-block;
+        float: right;
+        width: 50%;
+    }
+
+    #klient .left .text .bottomText {
+
+        margin-top: 5vh;
+    }
+    #klient .right .content {
+
+        height: 100%;
+        border-left: none;
+        display: block;
+        position: relative;
+        vertical-align: middle;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #klient .right .content .text {
+
+        border: 1px solid white;
+        border-bottom: none;
+        width: 100%;
+        height: 100%;
+        padding-left: 1vw;
+        text-align: center;
+    
+    }
+
+    #klient .left .title {
+        font-size: 6vh;
+    }
+
+    #klient .left .title .SF-RI {
+
+        font-size: 5vh;
+    
+    }
+
+    #klient .right .content .text .textarea p {
+
+        text-align: center;
+    
+    }
+
+    #klient .right .content .text .textarea .SF-L {
+        font-size: 2vh;
+    }
+
+    #klient .right .content .text img {
+        position: absolute;
+        transform: translate(-50%, 0) rotate(90deg);
+        bottom: 20px;
+        display: inline-block;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: auto;
+        height: 10vh;
+        left: 50%;
+        max-width: 100%;
+        vertical-align: middle;
+        cursor: pointer;
+    
+    }
+}
